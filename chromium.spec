@@ -129,7 +129,7 @@ export CXX="g++"
 export AR="ar"
 export RANLIB="ranlib"
 
-make -r %{_smp_mflags} chrome chrome_sandbox chromedriver BUILDTYPE=Release V=1 CC.host="gcc" CFLAGS.host="$PARSED_OPT_FLAGS" CXX.host="g++" CXXFLAGS.host="$PARSED_OPT_FLAGS" LINK.host="g++" LDFLAGS.host="${LDFLAGS}" AR.host="ar"
+make -r %{_smp_mflags} chromedriver BUILDTYPE=Release V=1 CC.host="gcc" CFLAGS.host="$PARSED_OPT_FLAGS" CXX.host="g++" CXXFLAGS.host="$PARSED_OPT_FLAGS" LINK.host="g++" LDFLAGS.host="${LDFLAGS}" AR.host="ar"
 
 %install
 rm -rf %{buildroot}
